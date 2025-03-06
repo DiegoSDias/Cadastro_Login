@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(/imagens/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mensagemErro {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #00000030;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 2px 1px 0px #00000070;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.label_float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label_float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label_float input:focus {
+    border-bottom: 2px solid;
+}
+
+.label_float label {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label_float input:focus + label ,
+.label_float input:valid + label {
+    font-size: 13px;
+    margin-top: 0;
+}
+
+button {
+    background-color: transparent;
+    border-color: black;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+button:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+.justify_center {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 60%;
+}
+
+p {
+    font-size: 14pt;
+    text-align: center;
+}
+
+a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.fa-eye-slash {
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    cursor: pointer;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    cursor: pointer;
+}

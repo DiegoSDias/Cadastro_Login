@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Cadastrar</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <h1>Cadastrar</h1>
+            
+            <div id="mensagemErro"></div>
+
+            <div class="label_float">
+                <input type="text" id="nome" placeholder="" required>
+                <label id="labelNome" for="nome">Nome</label>
+            </div>
+            <div class="label_float">
+                <input type="text" id="email" placeholder="" required>
+                <label id="labelEmail" for="email">Email</label>
+            </div>
+            <div class="label_float">
+                <input type="password" id="senha" placeholder="" required>
+                <label id="labelSenha" for="senha">Criar Senha</label>
+                    <i id="ver_senha" class="fa fa-eye-slash" aria-hidden="true"></i>
+            </div>
+            <div class="label_float">
+                <input type="password" id="confirmar_senha" placeholder="" required>
+                <label id="labelConfirmarSenha" for="confirmar_senha">Confirmar Senha</label>
+                    <i id="ver_confirme_senha" class="fa fa-eye-slash" aria-hidden="true"></i>
+
+            <div class="justify_center">
+                <button onclick="validarCadastro()">Cadastrar</button>
+            </div>
+        </div>
+
+        <div class="justify_center">
+            <hr>
+        </div>
+            <p>Já possui conta? <a href="/assets/login/login.html">Entrar</a></p>
+        </div>
+        </div>
+    </div>
+
+    <script src="/js/cadastrar.js"></script>
+</body>
+</html>
