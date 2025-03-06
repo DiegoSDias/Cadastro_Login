@@ -127,7 +127,8 @@
 
             localStorage.setItem('listaUsuario', JSON.stringify(listaUsuario));
 
-            window.location.href='../menu/menu.html'
+            //Botão de Cadastro
+            window.location.href='/public/menu.html'
             
         } else {
             //Se algum campos não estiverem devidamente preenchidos

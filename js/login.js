@@ -52,18 +52,30 @@ function entrar() {
 
     listaUsuario = JSON.parse(localStorage.getItem('listaUsuario'));
 
-    listaUsuario.forEach((item) => {
+    if(listaUsuario) {
+        listaUsuario.forEach((item) => {
 
-        if(email.value == item.emailCad && senha.value == item.senhaCad){
-            validarUsuario = {
-                nome: item.nomeCad,
-                email: item.emailCad,
-                senha: item.senhaCad
-            }
-        }  
-    });
+            if(email.value == item.emailCad && senha.value == item.senhaCad){
+                validarUsuario = {
+                    nome: item.nomeCad,
+                    email: item.emailCad,
+                    senha: item.senhaCad
+                }
+            }  
+        });
+    } else {
+        labelEmail.setAttribute('style', 'color: red');
+        email.setAttribute('style', 'border-color: red');
+        labelSenha.setAttribute('style', 'color: red');
+        senha.setAttribute('style', 'border-color: red');
+        mensagemErro.setAttribute('style', 'display: block');
+        mensagemErro.innerHTML = 'Insira um Email e Senha'
+        labelEmail.focus();
+    }
+
     if (email.value == validarUsuario.email && senha.value == validarUsuario.senha) {
-        window.location.href = '../menu/menu.html'
+        //Botão de Login
+        window.location.href = '/public/menu.html'
     } else {
         labelEmail.setAttribute('style', 'color: red');
         email.setAttribute('style', 'border-color: red');
